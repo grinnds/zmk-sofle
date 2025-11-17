@@ -74,7 +74,7 @@
 &none       &none   &kp LGUI    &lt ADJUST TAB  &lt NAV ESC     &kp SPACE   &none       &kp RET         &lt NUM BSPC    &lt FUN DEL &none       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         nav_layer {
@@ -93,7 +93,7 @@
 &trans &trans &trans &trans &trans &trans   &trans  &trans     &trans      &trans     &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         num_layer {
@@ -112,7 +112,7 @@
 &trans  &trans    &trans  &kp COMMA &kp DOT   &kp N0    &kp MINUS &trans &trans &trans &trans &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         fun_layer {
@@ -131,7 +131,7 @@
 &trans  &trans   &trans   &trans    &trans    &trans            &trans &trans    &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         adjust_layer {
@@ -143,5 +143,8 @@
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
+    };
 };
